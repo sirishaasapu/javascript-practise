@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>javascript array methods</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head> 
+    <body> 
+            <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+                    <span style="font-size:30px;" class="text-light ml-5">ARRAY</span>
+                    <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+                          <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto navbar-pills text-light"><!---for right align use ml-auto--->
+                         <li class="navbar-item">
+                             <a href="#" class="navbar-brand  text-light  active">home</a></li>
+                           <li class="navbar-item">
+                         <span class="navbar navbar-brand   dropdown dropdown-toggle" data-toggle="dropdown">about
+                             <div class="dropdown-menu">
+                             <div class="dropdown-item">link1</div>
+                             <div class="dropdown-item">link2</div>
+                             <div class="dropdown-item">link3</div>
+                               </div>
+                              </span>
+                            </li>
+                           <li class="navbar-item "><a href="#" class=" navbar-brand  text-light">contact</a></li>
+                           <li class="navbar-item"><a href="#" class="navbar-brand text-light">news</a></li>
+                     </ul>
+                 </div>
+                 </nav>
+                 <div class="container text-success bg-light p-5 mt-5">
+                        <!--javascript-->
+                      <script>
+                       var fru=["Apple","Banana","Orange","Mango"];
+                       document.write(fru+"<br>");
+                       var x=fru.push("pineapple");
+                       console.log(x);
+                       document.write(fru+"<br>");
+                       console.log(fru.shift());
+                       document.write(fru+"<br>");
+                       console.log(fru.pop());
+                       document.write(fru+"<br>");
+                       console.log(fru.unshift("kiwi"));
+                       document.write(fru+"<br>");
+                       console.log(fru.toString());
+                       delete fru[1];
+                       document.write(fru+"<br>");
+                       console.log(fru.splice(0,0,"Apple"));
+                       console.log(fru.splice(3,0,"pineapple"));
+                       document.write(fru+"<br>");
+                       console.log(fru.splice(0,2));
+                       document.write(fru.reverse()+"<br>");
+                       document.write(fru.join(" ")+"<br>");
+                       document.write(fru.join(" * "));
+                       </script>
+                       </div>
+                       </body>
+                       </html>
