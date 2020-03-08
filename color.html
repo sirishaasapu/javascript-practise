@@ -1,0 +1,25 @@
+<html>
+<head><title>change background color</title></head>
+<style>
+button
+{
+margin-top:350px;
+margin-left:700px;
+padding:10px;
+background-color:grey;
+font-weight:bold;
+}
+</style>
+<body id="col">
+<button  onclick="color()">click here change color</button>
+<script>
+function color()
+{
+  var color=["red","orange","yellow","green","blue","grey","pink","lightblue","hotpink","purple","black","white"];
+  let random=Math.floor(Math.random()*color.length);
+  document.getElementById("col").style.background=color[random];
+  
+}
+</script>
+</body>
+</html>
