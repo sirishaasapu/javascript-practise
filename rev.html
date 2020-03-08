@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head><title>JAVASCRIPT REVERSE NUMBER</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script></head>
+<body style="background:whitesmoke;">
+        <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+                <span style="font-size:30px;" class="text-light ml-5">Reverse of given number/string</span>
+                <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+                      <span class="navbar-toggler-icon"></span>
+                 </button>
+             </nav>
+             <div class="container">
+<center>
+<input type="text" name="txt" id="rev1" class="p-2 ml-3 mt-5"><br/><br/>
+<button onclick="reverse();">click me!</button>
+<p id="rev" class="text-success mt-5"></p>
+</center>
+</div>
+<script>
+function reverse()
+{
+ var mystr=document.getElementById("rev1").value;
+var x= mystr.split("");
+var y=x.reverse();
+document.getElementById("rev").innerHTML="Reverse of given number or string : "+y.join("");
+}
+</script>
+</body>
+</html>
