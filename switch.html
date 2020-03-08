@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>switch case</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background: whitesmoke;">
+    <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+            <span style="font-size:30px;" class="text-light ml-5">switch case</span>
+            <button  class="btn navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">           
+                  <span class="navbar-toggler-icon"></span>
+             </button>
+         </nav>
+         <div class="container">
+                <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="mark">
+                <br><br>
+                <button onclick="mark();" class="btn btn-success rounded ml-5"  return false;">click me!</button>
+                <br><br>
+                <div class="ml-5">
+                    press F12 after click me button to see the result
+                </div>
+<script>
+    function mark()
+    {
+        var marks=document.getElementById("mark").value;
+        switch(true)
+        {
+        case marks>90 : console.log("your grade is A");
+        break;
+        case marks>70: console.log("your grade isB");
+        break;
+        case marks>45 : console.log("your grade is C");
+        break;
+        case marks>35 : console.log("your grade D");
+        break;
+        default : console.log("you are failed");
+        }
+    }
+        </script>
+        </div>
+        </body>
+        </html>
