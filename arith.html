@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <head>
+        <title>javascript opertors</title>
+        <meta charset="utf-8">
+      
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head> 
+    <body> 
+            <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+                    <span style="font-size:30px;" class="text-light ml-5">arithmetic opertor</span>
+                
+                 </nav>
+                 <div id="demo" class="container">
+                        <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="a">
+                        <br>
+                        <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="b">
+                        <br><br>
+                        <button onclick="add()" class="btn btn-success rounded ml-5" >add</button>
+                        <button onclick="sub()" class="btn btn-success rounded ml-5" >sub</button>
+                        <button onclick="mul()" class="btn btn-success rounded ml-5"  >mul</button>
+                        <button onclick="div()" class="btn btn-success rounded ml-5" >div</button>
+                        <button onclick="mod()" class="btn btn-success rounded ml-5">mod</button>                       
+                        <br><br>
+                        <div id="hel" class="container">  
+                       <script>
+                             
+                            function add()
+                             { 
+                                var a=document.getElementById("a").value;
+                             var b=document.getElementById("b").value;
+                                if(a=="" && b==""){
+                                    window.alert("please enter number");
+                                }
+                                else{
+                                 var c=parseInt(a)+parseInt(b);
+                              document.getElementById("hel").innerHTML="sum of two numbers:"+c;
+                             }
+                            }
+                             function sub()
+                             {
+
+                                var a=document.getElementById("a").value;
+                             var b=document.getElementById("b").value;
+                             if(a=="" && b==""){
+                                    window.alert("please enter number");
+                                }
+                                else{
+                                var c=parseInt(a)-parseInt(b);
+                          document.getElementById("hel").innerHTML="substration of two numbers:"+c;
+                             }
+                            }
+                             function mul()
+                             {
+                                var a=document.getElementById("a").value;
+                             var b=document.getElementById("b").value;
+                             if(a=="" && b==""){
+                                    window.alert("please enter number");
+                                }
+                                else{
+                                var c=parseInt(a)*parseInt(b);
+                          document.getElementById("hel").innerHTML="multiplication of two numbers:"+c;
+                             }
+                            }
+                             function div()
+                             {
+                                var a=document.getElementById("a").value;
+                             var b=document.getElementById("b").value;
+                             if(a=="" && b==""){
+                                    window.alert("please enter number");
+                                }
+                                else{
+                                var c=parseInt(a)/parseInt(b);
+                          document.getElementById("hel").innerHTML="division of two numbers:"+c;
+                             }
+                            }
+                             function mod()
+                             {
+                                var a=document.getElementById("a").value;
+                             var b=document.getElementById("b").value;
+                             if(a=="" && b==""){
+                                    window.alert("please enter number");
+                                }
+                                else{
+                                var c=parseInt(a)%parseInt(b);
+                          document.getElementById("hel").innerHTML="modulus of two numbers:"+c;
+                             }
+                            }
+                      </script>
+
+                      </div>
+                        </div>
+                       
+                        
+                        </body>
+                        </html>
