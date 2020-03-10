@@ -1,0 +1,170 @@
+<!Doctype html>
+<html>
+<head>
+<title>registration form</title>
+</head>
+<body style="margin-top:50px;">
+<center><h1><u>REGISTRATION FORM</u></h1>
+<form name="f1" onsubmit="return valid()" action="C:\sirisha\git hub\javascript-practise\submit.html" method="post">
+<table border="2">
+<tr>
+<td>
+<table cellspacing="5" cellpadding="7">
+<tr>
+<td>UserName:</td>
+<td><input type="text" size="50" name="uname" pattern="[a-zA-Z  ]{2,}" title="name must contain alpahabet" autofocus required></td>
+<td><img src="" alt="photo" border="1"  height="500px" width="100">
+</td>
+</tr>
+<tr>
+<td>password:</td>
+<td><input type="password" size="10" name="pass1"></td>
+</tr>
+<tr>
+<td>confirm password:</td>
+<td><input type="password" size="10" name="cpass"></td>
+</tr>
+<tr>
+<td>email:</td>
+<td><input type="text" size="30" name="mail" required></td>
+</tr>
+<tr>
+<td>phone number:</td>
+<td><input type="number" name="phn" size="10" required></td>
+</tr>
+<tr>
+<td>gender:</td>
+<td><input type="radio" value="m" name="gender">MALE
+<input type="radio" value="f" name="gender">FEMALE</td>
+</tr>
+<tr>
+<td>date of birth</td>
+<span name="date">
+<td><select name="date" required>
+<option value="Day">day</option>
+<option value="14">4</option> 
+<option value="13">3</option>
+<option value="12">2</option>
+<option value="11">1</option>
+</select>
+<select name="date" required>
+<option value="month">month</option>
+<option value="12">12</option>
+<option value="11">11</option>
+<option value="10">10</option>
+<option value="9">9</option>
+</select>
+<select name="date" required>
+<option value="year">year</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+</select>
+</td>
+</span>
+</tr>
+<tr>
+<td>languages known</td>
+<td><input type="checkbox" name="lang" value="tel">TELUGU
+<input type="checkbox" name="lang" value="eng">ENGLISH
+<input type="checkbox" name="lang" value="hin">HINDI
+</td>
+</tr>
+<tr>
+<td>address</td>
+<td><textarea rows="7" cols="20">
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="submit">
+&nbsp;&nbsp;&nbsp;
+<input type="reset" value="reset">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</center>
+</table>
+</form>
+<script>
+function valid()
+{
+var pasword=document.f1.pass1.value;
+var cpassword=document.f1.cpass.value;
+if(pasword.length<6)
+{
+  alert("password must contain above 6");
+   return false;
+ } 
+if(pasword==cpassword)
+{
+return true;
+}
+else
+{
+alert("password and confirm password must be equal");
+return false;
+}
+}
+</script>
+<script>
+function valid()
+{
+var namee=document.f1.uname.value;
+if(namee=="null" || namee=="")
+{
+alert("please provide name");
+return false;
+}
+}
+</script>
+<script>
+function valid()
+{
+var maill=document.f1.mail.value;
+var position=maill.indexOf("@"); 
+var dposition=maill.lastIndexOf(".");
+if(position<1 || dposition<position+2 || dposition+2>=maill.length)
+{
+alert(" please enter valid email");
+return false;
+}
+}
+</script>
+<script>
+function valid()
+{
+var d= new Date();
+var dob=new Date(document.f1.date.value);
+if(dob>d)
+{
+alert("please provide correct date of birth");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+<script>
+function valid()
+{
+var phone=document.f1.phn.value;
+if(phone.length!=10)
+{
+alert("phone number must be 10 digits");
+return false;
+}
+else
+{
+return true;
+}
+}
+</script>
+</body>
+</html>
