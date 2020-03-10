@@ -12,17 +12,35 @@
              </nav>
              
              <div class="container mb-5">
-                <p>press F12 to see output</p>
+                        <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="x">
+                        <br>
+                       <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="y">
+                        <br>
+                        <input type="number" placeholder="Enter number" class="px-5 py-4 ml-5 mt-5" id="z">
+                        <br>
+                        <br>
+                        <button onclick="great()" class="btn btn-success rounded ml-5" >click me!</button>
+                      <p class="container p-5 mt-5 text-danger">press F12 to see output</p>
                     <script>
-                            var x=45,y=30,z=55;
+                            function great()
+                            {
+                             var x=document.getElementById("x").value;
+                             var y=document.getElementById("y").value;
+                             var z=document.getElementById("z").value;
+                             
                             if(x>y && x>z)
                             {
-                            console.log("A");
+                            console.log("x is greator than y and z");
+                            }
+                           else if(y>x && y>z)
+                             {
+                            console.log("y is greater than x and z");
                             }
                             else
                             {
-                            console.log("B");
+                                console.log("z is greater than x and y");     
                             }
+                        }
                     </script>
                  </div>
                  </body>
