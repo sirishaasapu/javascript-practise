@@ -1,0 +1,7 @@
+<!DOCTYPE catalog
+[
+<!ELEMENT emp(empname,empId,salary)>
+<!ELEMENT empname(#PCDATA)>
+<!ELEMENT empId(#PCDATA)>
+<!ELEMENT salary (#PCDATA)>
+]>

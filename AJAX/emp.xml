@@ -1,0 +1,24 @@
+<?xml verion="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE catalog SYSTEM "emp.dtd">
+<catalog>
+<emp>
+<empname>mohsin khan</empname>
+<empId>501</empId>
+<salary>700000</salary>
+</emp>
+<emp>
+<empname>shivangi joshi</empname>
+<empId>502</empId>
+<salary>60000</salary>
+</emp>
+<emp>
+<empname>sirisha</empname>
+<empId>505</empId>
+<salary>80000</salary>
+</emp>
+<emp>
+<empname>tanmay rishi shah</empname>
+<empId>504</empId>
+<salary>50000</salary>
+</emp>
+</catalog>

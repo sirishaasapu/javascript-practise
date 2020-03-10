@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head><title>AJAX example</title>
+        <meta charset="utf-8">
+      
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head> 
+    <body>
+<div id='demo' ></div><br>
+<div class="container-fluid bg-info header p-4 text-dark"><h1>SIRISHA ASAPU</h1></div>
+<div class="row">
+<div class="container-fluid  mt-5 " style="width:30%;margin-left:100px;">
+<div class="card card-body" style="background:ivory;">
+<div class="card-body card-title"><h1>sirisha asapu</h1></div>
+<img class="card-img-bottom" style="height: 200px;" src="https://picsum.photos/1200/440/?image=201">
+<p class="mt-3">student of prasiddha engineering college 
+    <br>Anathavaram &Amalapuram
+    <br>#artist
+    <br>#badminton player
+    <br>#Dreamer 
+</p>
+
+<button type="button" class="btn btn-primary stretched-link" style="width:40%;"><a href="#" class="btn-link text-white">see full profile</a></button>
+
+</div> <!--card body-->
+
+</div> <!---card-->
+
+<span class="col mt-5 mb-5 display-4 text-dark bg-light" ><h1>wikipedia</h1>
+<p class="mt-3"  style="font-size:20px;color:black;width:100%;"><b>sirisha asapu</b> studying 
+4th B.tech cse in prasiddha engineering college...
+completed inter at Aditya junior college Amalapuram with 93.9%</p>
+<h2 class="text-muted">Hobbies</h2> 
+<ul style="font-size:20px;">
+     <li>drawing</li>
+     <li>playing shuttle</li>
+ </ul>
+ <h2 class="text-muted">strength</h2>
+ <ul style="font-size:20px;">
+        <li>control over angryness</li>
+        </ul>
+        <h2 class="text-muted">weakness</h2>
+        <ul style="font-size:20px;">
+               <li>less patience</li>
+               </ul>
+</span>
+<span class="col container mt-5">
+<div class="btn-group-vertical">
+    <button type="button" class="btn btn-primary"><a href="#" class="btn-link text-white">home</a></button>
+    <button type="button" class="btn btn-primary"><a href="#" class="btn-link text-white">contact</a></button>
+   <div class="btn-group">
+
+    <button type="button" class="btn dropdown-toggle btn-primary" data-toggle="dropdown"><a href="#" class="btn-link text-white">qualification</a></button>
+   
+    <div class="dropdown-menu">
+         <a href="#" class="dropdown-item">10Th</a>
+         <a href="#" class="dropdown-item">inter</a>
+         <a href="#" class="dropdown-item">B.tech</a>
+     </div>
+     </div>
+</div>
+</span>
+</div><!-----container-fluid---->
+</div><!--row-->
+<div class="container mt-2 alert alert-success dismissible"><a href="#" class="alert-link text-muted">
+for more info</a>
+<button class="close" data-dismiss="alert">&times</button>
+</div>
+<div class="card-columns mt-5 container">
+<div class="card">
+   <div class="card-body">
+        <p class="card-text"> Html</p>
+   </div>
+   </div>
+   <div class="card">
+   <div class="card-body">
+      <p class="card-text"> css</p>
+    </div>
+    </div>
+    <div class="card">
+    <div class="card-body">
+             <p class="card-text"> javascript</p>
+        </div>
+</div>
+</div>
+<div class="card-columns container">
+    <div class="card">
+        <div class="card-body">
+             <p class="card-text"> angular</p>
+        </div>
+        </div>
+        <div class="card">
+        <div class="card-body">
+           <p class="card-text">react</p>
+         </div>
+         </div>
+         <div class="card">
+         <div class="card-body">
+                  <p class="card-text"> typescript</p>
+             </div>
+    </div>
+</div>
+</div>
+<div class="container">
+<input type="button" onclick="previous()" value="<<">
+<input type="button" onclick="next()" value=">>">
+</div>
+<script>
+var i = 0, len;
+displayemp(i);
+
+function displayemp(i) {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this, i);
+    }
+  };
+  xmlhttp.open("GET", "emp.xml", true);
+  xmlhttp.send();
+}
+
+function myFunction(xml, i) {
+  var xmlDoc = xml.responseXML; 
+  x = xmlDoc.getElementsByTagName("emp");
+  len = x.length;
+  document.getElementById("demo").innerHTML =
+  "empname: " +
+  x[i].getElementsByTagName("empname")[0].childNodes[0].nodeValue +
+  "<br>empId: " +
+  x[i].getElementsByTagName("empId")[0].childNodes[0].nodeValue +
+  "<br>salary: " + 
+  x[i].getElementsByTagName("salary")[0].childNodes[0].nodeValue;
+}
+
+function next() {
+  if (i < len-1) {
+    i++;
+    displayemp(i);
+  }
+}
+
+function previous() {
+  if (i > 0) {
+    i--;
+    displayemp(i);
+  }
+}
+</script>
+
+</body>
+</html>
