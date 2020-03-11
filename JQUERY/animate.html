@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("#divv");  
+    div.animate({right: '500px'}, "slow");
+    div.animate({height:"300px"},"slow");
+    div.animate({width:"350px"},"slow");
+    div.animate({fontSize: '100px'}, "slow");
+   
+   
+  });
+});
+</script> 
+</head>
+<body>
+        <nav class="navbar p-3 navbar-light bg-info navbar-expand-lg">
+                <span style="font-size:30px;" class="text-light ml-5">Welcome to jquery tutorial</span>
+             </nav>
+<div class="mt-5 container">
+<button>Animation</button>
+
+<div id="divv" class="mt-5" style="text-align:center;background:#98bf21;height:100px;width:200px;position:absolute;">jquery</div>
+</div>
+</body>
+</html>
