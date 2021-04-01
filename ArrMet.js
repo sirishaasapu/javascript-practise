@@ -9,3 +9,6 @@ console.log(x);
 //reverse Method
 console.log(arrs.reverse(item=>item));
 
+
+//filter
+console.log(arrs.filter(item=>item>=2));
