@@ -48,3 +48,8 @@ console.log(arrs.includes(2));
 
 const name="sirisha";
 console.log(Array.from(name));
+
+
+//Array.of
+
+console.log(Array.of(0,2,3,4));
