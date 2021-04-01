@@ -43,3 +43,8 @@ console.log(arrs.some((item)=>{
 
 //includes
 console.log(arrs.includes(2));
+
+//Array.from
+
+const name="sirisha";
+console.log(Array.from(name));
