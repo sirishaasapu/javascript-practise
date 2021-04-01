@@ -4,3 +4,8 @@ let x=arrs.map(item=>
     item + 1
     );
 console.log(x);
+
+
+//reverse Method
+console.log(arrs.reverse(item=>item));
+
