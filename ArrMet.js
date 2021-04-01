@@ -15,3 +15,9 @@ console.log(arrs.filter(item=>item>=2));
 
 //sort
 console.log(arrs.sort((a,b)=>a>b?1 :-1));
+
+//ForEach
+arrs.forEach(item=(value,index)=> {
+    console.log(index +":"+ (value+1));
+}
+    );
