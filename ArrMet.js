@@ -12,3 +12,6 @@ console.log(arrs.reverse(item=>item));
 
 //filter
 console.log(arrs.filter(item=>item>=2));
+
+//sort
+console.log(arrs.sort((a,b)=>a>b?1 :-1));
