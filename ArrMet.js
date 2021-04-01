@@ -27,5 +27,11 @@ console.log(arrs.reduce((total,value)=>{
     return total+value;
 }));
 
-
+//length
 console.log(arrs.length);
+
+
+//every
+console.log(arrs.every((item)=>{
+    item<0
+}));
