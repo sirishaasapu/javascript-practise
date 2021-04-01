@@ -40,3 +40,6 @@ console.log(arrs.every((item)=>{
 console.log(arrs.some((item)=>{
     item>2
 }));
+
+//includes
+console.log(arrs.includes(2));
