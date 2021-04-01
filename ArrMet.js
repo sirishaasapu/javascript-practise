@@ -21,3 +21,8 @@ arrs.forEach(item=(value,index)=> {
     console.log(index +":"+ (value+1));
 }
     );
+
+//reduce
+console.log(arrs.reduce((total,value)=>{
+    return total+value;
+}));
