@@ -26,3 +26,6 @@ arrs.forEach(item=(value,index)=> {
 console.log(arrs.reduce((total,value)=>{
     return total+value;
 }));
+
+
+console.log(arrs.length);
