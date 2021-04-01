@@ -33,5 +33,10 @@ console.log(arrs.length);
 
 //every
 console.log(arrs.every((item)=>{
-    item<0
+    item<=2
+}));
+
+//some
+console.log(arrs.some((item)=>{
+    item>2
 }));
